@@ -8,7 +8,7 @@ let objects = {
 let models = {
   flower: {
     type: 'gltf',
-    url: '/models/flower',
+    url: '/webgpu/models/flower',
     move: {
       scale: [0.01,0.01,0.01],
       trans: [0,-0.7,-2]
@@ -17,7 +17,7 @@ let models = {
   },
   earth: {
     type: 'gltf',
-    url: '/models/flower_medium',
+    url: '/webgpu/models/flower_medium',
     move: {
       scale: [0.01,0.01,0.01],
       trans: [0,-0.7,-2]
