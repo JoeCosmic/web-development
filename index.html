@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WEBGPU TEST</title>
+    <script>
+    /*
+    *
+    */
+
+    let device = null;
+    let format = null;
+
+    async function initializeWebGPU() {
+      //Проверяем поддержку WebGPU
+      if(!('gpu' in navigator)) {
+        console.error('Ваш браузер не поддерживает WebGPU.');
+        return false;
+      }
+
+      //Получаем графический адаптер
+      const adapter = await navigator.gpu.requestAdapter();
+      if(!adapter) {
+        console.error('Графические адаптеры не найдены.');
+        return false;
+      }
+
+      //цветовой формат графического адаптера
+      format = navigator.gpu.getPreferredCanvasFormat(adapter);
+
+      //Получаем графическое устройство
+      device = await adapter.requestDevice();
+      device.lost.then((info) => {
+        console.error(`Графическое устройство было потеряно: ${info.message}`);
+        device = null;
+        //Если графическое устройство было потеряно,
+        //снова получаем графическое устройство
+        if(info.reason != 'destroyed'){
+          initializeWebGPU();
+        }
+      });
+    }
+
+    initializeWebGPU();
+
+    </script>
+  </head>
+  <body>
+    Hello
+    <canvas id = 'canvas'></canvas>
+  </body>
+</html>
