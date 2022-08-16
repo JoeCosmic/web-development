@@ -1,0 +1,149 @@
+{
+    "asset" : {
+        "version" : "2.0",
+        "generator" : "Khronos glTF Blender I/O v1.2.20"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "translation" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "10461_Yucca_Plant_v1.001",
+            "scale" : [
+                0.09064531326293945,
+                0.09064531326293945,
+                0.09064531326293945
+            ],
+            "rotation" : [
+                0,
+                0,
+                0,
+                1
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "10461_Yucca_Plant_v1.001",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0,
+                    "texCoord" : 0
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "primitives" : [
+                {
+                    "indices" : 3,
+                    "attributes" : {
+                        "TEXCOORD_0" : 0,
+                        "POSITION" : 1,
+                        "NORMAL" : 2
+                    },
+                    "material" : 0
+                }
+            ],
+            "name" : "10461_Yucca_Plant_v1.001"
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "10461_Yucca_Plant_v1_Diffuse.jpg.001",
+            "uri" : "10461_Yucca_Plant_v1_Diffuse.jpg"
+        }
+    ],
+    "accessors" : [
+        {
+            "type" : "VEC2",
+            "count" : 28350,
+            "bufferView" : 0,
+            "componentType" : 5126
+        },
+        {
+            "count" : 28350,
+            "bufferView" : 1,
+            "type" : "VEC3",
+            "min" : [
+                -68.37989807128906,
+                0,
+                -68.93109893798828
+            ],
+            "max" : [
+                69.3594970703125,
+                156.95489501953125,
+                88.40229797363281
+            ],
+            "componentType" : 5126
+        },
+        {
+            "type" : "VEC3",
+            "count" : 28350,
+            "bufferView" : 2,
+            "componentType" : 5126
+        },
+        {
+            "type" : "SCALAR",
+            "count" : 151680,
+            "bufferView" : 3,
+            "componentType" : 5123
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteOffset" : 0,
+            "byteLength" : 226800
+        },
+        {
+            "buffer" : 0,
+            "byteOffset" : 226800,
+            "byteLength" : 340200
+        },
+        {
+            "buffer" : 0,
+            "byteOffset" : 567000,
+            "byteLength" : 340200
+        },
+        {
+            "buffer" : 0,
+            "byteOffset" : 907200,
+            "byteLength" : 303360
+        }
+    ],
+    "samplers" : [
+        {
+            "minFilter" : 9986,
+            "wrapS" : 10497,
+            "magFilter" : 9729,
+            "wrapT" : 10497
+        }
+    ],
+    "buffers" : [
+        {
+            "uri" : "flower.bin",
+            "byteLength" : 1210560
+        }
+    ]
+}
