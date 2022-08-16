@@ -6,7 +6,7 @@
 
 let device = null;
 let format = null;
-let wglsShader = loadFile('/shaders/shader.c');
+let wglsShader = loadFile('/webgpu/shaders/shader.c');
 // let wglsShader = {};
 // wglsShader.vertex = loadFile('/shaders/vertex.c');
 // wglsShader.fragment = loadFile('/shaders/fragment.c');
